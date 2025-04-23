@@ -1,0 +1,120 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* Beige */
+    color: #333; /* Dark gray for readability */
+}
+
+nav {
+    background-color: #333; /* Dark gray */
+    color: #fff; /* White */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #eee; /* Light gray */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light gray border for separation */
+    background-color: #fff; /* White background for content */
+}
+
+footer {
+    background-color: #333; /* Dark gray */
+    color: #fff; /* White */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: #333; /* Dark gray */
+}
+
+/* Style for methodology pages specifically */
+#methodology-content {
+    margin-top: 20px;
+}
+
+#methodology-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#methodology-content h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
