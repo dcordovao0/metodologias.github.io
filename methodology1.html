@@ -100,7 +100,7 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Página Principal</a></li>
             <li class="dropdown">
                 <a href="#" class="dropbtn">Methodologies</a>
                 <div class="dropdown-content">
@@ -111,7 +111,7 @@
                     <a href="methodology5.html">Methodology 5</a>
                 </div>
             </li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
         </ul>
     </nav>
 
@@ -123,7 +123,7 @@
 
         <section id="essential-ideas" class="section-flex">
             <div class="section-text">
-                <h2>Essential Ideas</h2>
+                <h2>Ideas Esenciales</h2>
                 <ul>
                     <li>La instrucción guiada se basa en una enseñanza estructurada y secuencial.</li>
                     <li>El docente proporciona ejemplos, explicaciones claras y andamiaje progresivo.</li>
@@ -132,40 +132,52 @@
                 </ul>
             </div>
             <div class="section-img">
-                <img src="ruta-de-la-imagen1.jpg" alt="Esquema de instrucción guiada">
+                <img src="i_e_instguia.jpg" alt="Esquema de instrucción guiada">
             </div>
         </section>
 
         <section id="guided-types">
-            <h2>Tipos de Instrucción Guiada</h2>
+            <h2>Tipos de Andamiaje</h2>
             <div class="image-grid">
-                <img src="imagen-explicita.jpg" alt="Instrucción explícita" onclick="openPopup('popup1')">
-                <img src="imagen-modelado.jpg" alt="Modelado" onclick="openPopup('popup2')">
-                <img src="imagen-andamiaje.jpg" alt="Andamiaje progresivo" onclick="openPopup('popup3')">
+                <img src="insgu1.jpg" alt="Instrucción Directa" onclick="openPopup('popup1')">
+                <img src="insgu2.jpg.jpg" alt="Modelamiento" onclick="openPopup('popup2')">
+                <img src="insgu3.jpg.jpg" alt="Cues y Prompts" onclick="openPopup('popup3')">
+                <img src="insgu1.jpg" alt="Preguntas" onclick="openPopup('popup4')">
             </div>
 
             <!-- Popups -->
             <div id="popup1" class="popup">
                 <div class="popup-content">
                     <span class="close" onclick="closePopup('popup1')">&times;</span>
-                    <h3>Instrucción Explícita</h3>
-                    <p>Consiste en la presentación directa del contenido por parte del docente, con explicaciones claras y ejemplos concretos.</p>
+                    <h3>Instrucción Directa</h3>
+                    <p>La instrucción directa es una estrategia en la que el docente presenta los contenidos de forma clara y secuencial. Incluye una explicación explícita de conceptos, demostraciones paso a paso y práctica guiada, para asegurar que los estudiantes comprendan antes de pasar a la práctica independiente.</p>
+
                 </div>
             </div>
 
             <div id="popup2" class="popup">
                 <div class="popup-content">
                     <span class="close" onclick="closePopup('popup2')">&times;</span>
-                    <h3>Modelado</h3>
-                    <p>El docente demuestra cómo resolver un problema o realizar una tarea mientras verbaliza su pensamiento, sirviendo de modelo para los estudiantes.</p>
+                    <h3>Modelamiento</h3>
+                <p>El modelamiento implica que el docente realice una tarea o resuelva un problema frente a los estudiantes, explicando en voz alta sus decisiones y procesos mentales. Esta técnica permite a los estudiantes observar cómo un experto enfrenta una situación, facilitando la transferencia de estrategias.</p>
+
                 </div>
             </div>
 
             <div id="popup3" class="popup">
                 <div class="popup-content">
                     <span class="close" onclick="closePopup('popup3')">&times;</span>
-                    <h3>Andamiaje Progresivo</h3>
-                    <p>Se proporciona apoyo gradual que se va retirando conforme el estudiante gana independencia y confianza en la tarea.</p>
+                    <h3>Cues y Prompts</h3>
+                    <p>Los "cues" (señales) y "prompts" (estímulos o ayudas) son indicaciones verbales o visuales que el docente ofrece para guiar a los estudiantes durante una tarea. Ayudan a activar conocimientos previos, centrar la atención en aspectos clave o facilitar la resolución sin dar directamente la respuesta.</p>
+
+                </div>
+            </div>
+        <div id="popup1" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup('popup4')">&times;</span>
+                    <h3>Preguntas</h3>
+                    <p>El uso de preguntas estratégicas permite al docente guiar el pensamiento del estudiante, diagnosticar su comprensión y fomentar la reflexión. Las preguntas pueden ser abiertas o cerradas, y deben adaptarse al nivel de desarrollo cognitivo del grupo, promoviendo una participación activa.</p>
+
                 </div>
             </div>
         </section>
