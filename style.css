@@ -2,13 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fefae0; /* Light cream */
-    color: #222; /* Darker gray for better contrast */
+    background-color: #eeeeee; /* Anti-flash white */
+    color: #122023; /* Moonstone 100 (oscuro para buen contraste) */
 }
 
 nav {
-    background: linear-gradient(90deg, #ffba08, #faa307); /* Vibrant gradient */
-    color: #fff;
+    background: linear-gradient(90deg, #326273, #5c9ead); /* Payne's gray a Moonstone */
+    color: #ffffff;
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -26,7 +26,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     padding: 8px 15px;
     border-radius: 5px;
@@ -34,7 +34,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #e85d04; /* Bright orange */
+    background-color: #e39774; /* Atomic Tangerine */
     transform: scale(1.1);
 }
 
@@ -47,7 +47,7 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: #ffffff; /* White */
     min-width: 180px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -56,7 +56,7 @@ nav ul li a:hover {
 }
 
 .dropdown-content a {
-    color: #333;
+    color: #244047; /* Moonstone 200 */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -65,7 +65,8 @@ nav ul li a:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #f4a261; /* Warm orange */
+    background-color: #e39774; /* Atomic Tangerine */
+    color: #ffffff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -81,8 +82,8 @@ nav ul li a:hover {
 }
 
 header {
-    background: linear-gradient(90deg, #023e8a, #0077b6); /* Vibrant blue gradient */
-    color: #fff;
+    background: linear-gradient(90deg, #326273, #5c9ead); /* Payne's gray to Moonstone */
+    color: #ffffff;
     padding: 30px;
     text-align: center;
     font-size: 1.5em;
@@ -97,8 +98,8 @@ main {
 section {
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
+    border: 1px solid #bed8de; /* Moonstone 800 */
+    background-color: #ffffff; /* White */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
@@ -109,8 +110,8 @@ section:hover {
 }
 
 footer {
-    background: linear-gradient(90deg, #023e8a, #0077b6); /* Vibrant blue gradient */
-    color: #fff;
+    background: linear-gradient(90deg, #326273, #5c9ead); /* Payne's gray to Moonstone */
+    color: #ffffff;
     text-align: center;
     padding: 15px 0;
     position: fixed;
@@ -120,7 +121,7 @@ footer {
 }
 
 h1, h2, h3 {
-    color: #023e8a; /* Deep blue */
+    color: #326273; /* Payne's gray */
 }
 
 /* Style for methodology pages specifically */
@@ -131,11 +132,11 @@ h1, h2, h3 {
 #methodology-content h2 {
     font-size: 2.2em;
     margin-bottom: 15px;
-    color: #e63946; /* Vibrant red */
+    color: #e39774; /* Atomic Tangerine */
 }
 
 #methodology-content h3 {
     font-size: 1.8em;
     margin-top: 20px;
-    color: #457b9d; /* Soft blue */
+    color: #5c9ead; /* Moonstone base */
 }
