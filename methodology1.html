@@ -5,88 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methodology 1 - Instrucción Guiada</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .section-flex {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
-        }
-        .section-text {
-            flex: 1 1 50%;
-            padding-right: 20px;
-        }
-        .section-img {
-            flex: 1 1 45%;
-        }
-        .section-img img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        .document-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            background-color: #5c9ead;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .document-link:hover {
-            background-color: #47808d;
-        }
-        .document-link img {
-            width: 32px;
-            height: 32px;
-        }
-        .popup {
-            display: none;
-            position: fixed;
-            z-index: 10;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.6);
-        }
-        .popup-content {
-            background-color: #fff;
-            margin: 10% auto;
-            padding: 20px;
-            width: 80%;
-            max-width: 600px;
-            border-radius: 10px;
-            position: relative;
-        }
-        .close {
-            position: absolute;
-            right: 15px;
-            top: 10px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #333;
-            cursor: pointer;
-        }
-        .image-grid {
-            display: flex;
-            justify-content: space-around;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .image-grid img {
-            width: 180px;
-            height: auto;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-        }
-    </style>
     <script>
         function openPopup(id) {
             document.getElementById(id).style.display = "block";
@@ -151,7 +69,6 @@
                     <span class="close" onclick="closePopup('popup1')">&times;</span>
                     <h3>Instrucción Directa</h3>
                     <p>La instrucción directa es una estrategia en la que el docente presenta los contenidos de forma clara y secuencial. Incluye una explicación explícita de conceptos, demostraciones paso a paso y práctica guiada, para asegurar que los estudiantes comprendan antes de pasar a la práctica independiente.</p>
-
                 </div>
             </div>
 
@@ -159,8 +76,7 @@
                 <div class="popup-content">
                     <span class="close" onclick="closePopup('popup2')">&times;</span>
                     <h3>Modelamiento</h3>
-                <p>El modelamiento implica que el docente realice una tarea o resuelva un problema frente a los estudiantes, explicando en voz alta sus decisiones y procesos mentales. Esta técnica permite a los estudiantes observar cómo un experto enfrenta una situación, facilitando la transferencia de estrategias.</p>
-
+                    <p>El modelamiento implica que el docente realice una tarea o resuelva un problema frente a los estudiantes, explicando en voz alta sus decisiones y procesos mentales. Esta técnica permite a los estudiantes observar cómo un experto enfrenta una situación, facilitando la transferencia de estrategias.</p>
                 </div>
             </div>
 
@@ -169,15 +85,14 @@
                     <span class="close" onclick="closePopup('popup3')">&times;</span>
                     <h3>Cues y Prompts</h3>
                     <p>Los "cues" (señales) y "prompts" (estímulos o ayudas) son indicaciones verbales o visuales que el docente ofrece para guiar a los estudiantes durante una tarea. Ayudan a activar conocimientos previos, centrar la atención en aspectos clave o facilitar la resolución sin dar directamente la respuesta.</p>
-
                 </div>
             </div>
-        <div id="popup1" class="popup">
+
+            <div id="popup4" class="popup">
                 <div class="popup-content">
                     <span class="close" onclick="closePopup('popup4')">&times;</span>
                     <h3>Preguntas</h3>
                     <p>El uso de preguntas estratégicas permite al docente guiar el pensamiento del estudiante, diagnosticar su comprensión y fomentar la reflexión. Las preguntas pueden ser abiertas o cerradas, y deben adaptarse al nivel de desarrollo cognitivo del grupo, promoviendo una participación activa.</p>
-
                 </div>
             </div>
         </section>
@@ -214,9 +129,9 @@
         <section id="references" style="margin-top: 40px;">
             <h2>Referencias</h2>
             <ul>
-                <li>Rosenshine, B. (2012). *Principles of Instruction*. American Educator.</li>
-                <li>Vygotsky, L. S. (1978). *Mind in Society: The Development of Higher Psychological Processes.*</li>
-                <li>Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. *Cognitive Science*.</li>
+                <li>Rosenshine, B. (2012). <em>Principles of Instruction</em>. American Educator.</li>
+                <li>Vygotsky, L. S. (1978). <em>Mind in Society: The Development of Higher Psychological Processes.</em></li>
+                <li>Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. <em>Cognitive Science</em>.</li>
             </ul>
         </section>
 
