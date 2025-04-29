@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methodology 1 - ABP</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .section-flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-text {
+            flex: 1 1 50%;
+            padding-right: 20px;
+        }
+        .section-img {
+            flex: 1 1 45%;
+        }
+        .section-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .document-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            background-color: #5c9ead;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            width: fit-content;
+        }
+        .document-link:hover {
+            background-color: #47808d;
+        }
+        .document-link img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
 </head>
 <body>
 
@@ -30,38 +70,59 @@
     </header>
 
     <main>
-        <section id="essential-ideas">
-            <h2>Essential Ideas</h2>
-            <p>El Aprendizaje Basado en Problemas (ABP) es una metodología activa en la que los estudiantes aprenden a través de la resolución de problemas reales o simulados. Este enfoque promueve el pensamiento crítico, el trabajo en equipo y la aplicación de conocimientos en contextos auténticos.</p>
-            <img src="ruta-de-la-imagen1.jpg" alt="Esquema del ABP" style="max-width:100%; height:auto;">
+
+        <section id="essential-ideas" class="section-flex">
+            <div class="section-text">
+                <h2>Essential Ideas</h2>
+                <ul>
+                    <li>El ABP parte de un problema real o simulado como punto de partida para el aprendizaje.</li>
+                    <li>Estimula el pensamiento crítico y la reflexión constante.</li>
+                    <li>Impulsa el trabajo colaborativo entre estudiantes.</li>
+                    <li>Favorece la integración del conocimiento en contextos auténticos.</li>
+                </ul>
+            </div>
+            <div class="section-img">
+                <img src="ruta-de-la-imagen1.jpg" alt="Esquema del ABP">
+            </div>
         </section>
 
-        <section id="pros-and-cons">
-            <h2>Pros and Cons</h2>
-
-            <h3>Pros</h3>
-            <ul>
-                <li>Fomenta el aprendizaje autónomo y significativo.</li>
-                <li>Desarrolla habilidades de investigación y resolución de problemas.</li>
-                <li>Promueve la colaboración y el trabajo en equipo.</li>
-                <li>Relaciona el conocimiento con contextos reales.</li>
-            </ul>
-
-            <h3>Cons</h3>
-            <ul>
-                <li>Requiere más tiempo de planificación por parte del docente.</li>
-                <li>Puede generar confusión si no se guía adecuadamente el proceso.</li>
-                <li>Es difícil de implementar en grupos grandes sin suficiente acompañamiento.</li>
-            </ul>
-
-            <img src="ruta-de-la-imagen2.jpg" alt="Ventajas y desventajas del ABP" style="max-width:100%; height:auto;">
+        <section id="pros" class="section-flex">
+            <div class="section-text">
+                <h2>Ventajas</h2>
+                <ul>
+                    <li>Fomenta el aprendizaje autónomo y significativo.</li>
+                    <li>Desarrolla habilidades de investigación y resolución de problemas.</li>
+                    <li>Promueve la colaboración y el trabajo en equipo.</li>
+                    <li>Relaciona el conocimiento con contextos reales.</li>
+                </ul>
+            </div>
+            <div class="section-img">
+                <img src="ruta-de-la-imagen2a.jpg" alt="Ventajas del ABP">
+            </div>
         </section>
 
-        <section id="example">
-            <h2>Example</h2>
-            <p>En una clase de ciencias, se presenta a los estudiantes un caso de contaminación del agua en una comunidad local. Los estudiantes investigan las causas, consecuencias y posibles soluciones al problema, trabajando en grupos, consultando fuentes confiables y presentando propuestas al final del proceso.</p>
-            <img src="ruta-de-la-imagen3.jpg" alt="Ejemplo de caso ABP" style="max-width:100%; height:auto;">
+        <section id="cons" class="section-flex">
+            <div class="section-text">
+                <h2>Retos</h2>
+                <ul>
+                    <li>Requiere más tiempo de planificación por parte del docente.</li>
+                    <li>Puede generar confusión si no se guía adecuadamente el proceso.</li>
+                    <li>Es difícil de implementar en grupos grandes sin suficiente acompañamiento.</li>
+                </ul>
+            </div>
+            <div class="section-img">
+                <img src="ruta-de-la-imagen2b.jpg" alt="Desventajas del ABP">
+            </div>
         </section>
+
+        <section id="example-link" style="text-align: center; margin-top: 40px;">
+            <h2>Planificación de Ejemplo</h2>
+            <a href="ejemplo-planificacion.pdf" class="document-link" target="_blank">
+                <img src="icono-documento.png" alt="Documento">
+                Ver planificación en PDF
+            </a>
+        </section>
+
     </main>
 
     <footer>
