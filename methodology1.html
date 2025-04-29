@@ -11,6 +11,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
+            margin-bottom: 40px;
         }
         .section-text {
             flex: 1 1 50%;
@@ -23,9 +24,10 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
+            cursor: pointer;
         }
         .document-link {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 10px;
             text-decoration: none;
@@ -35,7 +37,6 @@
             border-radius: 8px;
             font-weight: bold;
             transition: background-color 0.3s ease;
-            width: fit-content;
         }
         .document-link:hover {
             background-color: #47808d;
@@ -44,7 +45,56 @@
             width: 32px;
             height: 32px;
         }
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.6);
+        }
+        .popup-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .close {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+        .image-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .image-grid img {
+            width: 180px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
     </style>
+    <script>
+        function openPopup(id) {
+            document.getElementById(id).style.display = "block";
+        }
+        function closePopup(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    </script>
 </head>
 <body>
 
@@ -86,6 +136,40 @@
             </div>
         </section>
 
+        <section id="guided-types">
+            <h2>Tipos de Instrucción Guiada</h2>
+            <div class="image-grid">
+                <img src="imagen-explicita.jpg" alt="Instrucción explícita" onclick="openPopup('popup1')">
+                <img src="imagen-modelado.jpg" alt="Modelado" onclick="openPopup('popup2')">
+                <img src="imagen-andamiaje.jpg" alt="Andamiaje progresivo" onclick="openPopup('popup3')">
+            </div>
+
+            <!-- Popups -->
+            <div id="popup1" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup('popup1')">&times;</span>
+                    <h3>Instrucción Explícita</h3>
+                    <p>Consiste en la presentación directa del contenido por parte del docente, con explicaciones claras y ejemplos concretos.</p>
+                </div>
+            </div>
+
+            <div id="popup2" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup('popup2')">&times;</span>
+                    <h3>Modelado</h3>
+                    <p>El docente demuestra cómo resolver un problema o realizar una tarea mientras verbaliza su pensamiento, sirviendo de modelo para los estudiantes.</p>
+                </div>
+            </div>
+
+            <div id="popup3" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup('popup3')">&times;</span>
+                    <h3>Andamiaje Progresivo</h3>
+                    <p>Se proporciona apoyo gradual que se va retirando conforme el estudiante gana independencia y confianza en la tarea.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="pros" class="section-flex">
             <div class="section-text">
                 <h2>Ventajas</h2>
@@ -113,6 +197,15 @@
             <div class="section-img">
                 <img src="ruta-de-la-imagen2b.jpg" alt="Retos de la instrucción guiada">
             </div>
+        </section>
+
+        <section id="references" style="margin-top: 40px;">
+            <h2>Referencias</h2>
+            <ul>
+                <li>Rosenshine, B. (2012). *Principles of Instruction*. American Educator.</li>
+                <li>Vygotsky, L. S. (1978). *Mind in Society: The Development of Higher Psychological Processes.*</li>
+                <li>Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. *Cognitive Science*.</li>
+            </ul>
         </section>
 
         <section id="example-link" style="text-align: center; margin-top: 40px;">
