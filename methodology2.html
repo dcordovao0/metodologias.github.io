@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Methodology 2</title> <!-- 🔧 Cambia el título que aparece en la pestaña del navegador -->
-    <link rel="stylesheet" href="style.css"> <!-- 🔧 Asegúrate de tener el archivo style.css -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Methodology 2</title>
+    <link rel="stylesheet" href="style.css" />
     <script>
-        // ✅ Funciones para abrir y cerrar los popups (ventanas emergentes de imagen)
         function openPopup(id) {
             document.getElementById(id).style.display = "block";
         }
@@ -17,133 +16,120 @@
 </head>
 <body>
 
-    <!-- ✅ Menú de navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Methodologies</a>
-                <div class="dropdown-content">
-                    <a href="methodology1.html">Methodology 1</a> <!-- 🔧 Puedes cambiar los enlaces si el archivo tiene otro nombre -->
-                    <a href="methodology2.html">Methodology 2</a>
-                    <a href="methodology3.html">Methodology 3</a>
-                    <a href="methodology4.html">Methodology 4</a>
-                    <a href="methodology5.html">Methodology 5</a>
-                </div>
-            </li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </nav>
-
-    <!-- ✅ Encabezado principal -->
-    <header>
-        <h1>Flipped Classroom</h1> <!-- 🔧 Cambia el nombre del título principal de la página -->
-    </header>
-
-    <main>
-
-        <!-- ✅ Sección de ideas esenciales -->
-        <section id="essential-ideas" class="section-flex">
-            <div class="section-text">
-                <h2>Essential Ideas</h2>
-                <ul>
-                    <!-- 🔧 Cambia estos ítems por los conceptos clave de la metodología -->
-                    <li>Facilita la adquisición previa de conocimientos teóricos, optimizando el tiempo en clase para la aplicación práctica y la resolución de dudas.</li>
-                    <li>En lugar de presentar contenido en clase y dejar los ejercicios para casa, el contenido se estudia en casa y se practican actividades en clase.</li>
-                    <li>Los estudiantes acceden a videos, lecturas o presentaciones antes de la clase para prepararse. Estos pueden presentarse en formato digital.</li>
-                    <li>Es una metodología perfecta para convinar con otras metodologías en clase, como por ejemplo centros de aprendizaje como se verá en el ejemplo.</li>
-                </ul>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Methodologies</a>
+            <div class="dropdown-content">
+                <a href="methodology1.html">Methodology 1</a>
+                <a href="methodology2.html">Methodology 2</a>
+                <a href="methodology3.html">Methodology 3</a>
+                <a href="methodology4.html">Methodology 4</a>
+                <a href="methodology5.html">Methodology 5</a>
             </div>
-            <div class="section-img">
-                <!-- 🔧 Cambia la ruta de la imagen representativa -->
-                <img src="images/F_C_Image1.png" alt="Esquema de flipped classroom">
-                <figcaption>
-                    Fuente: <a href="https://teaching.washington.edu/course-design/flipped-hybrid-and-online-teaching/flipping-the-classroom/" target="_blank">Education Corner</a>
-                </figcaption>
-            </div>
-        </section>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
+</nav>
 
-        <!-- ✅ Sección de tipos o variantes (con popups) -->
-        <section id="types">
-            <h2>Medios digitales y sus ventajas</h2>
-            <div class="image-grid">
-                <!-- 🔧 Cambia las rutas de las imágenes y los textos alternativos -->
-                <img src="images/videoFC.jpg" alt="Videos" onclick="openPopup('popup1')">
-                <img src="images/interactivoFC.png" alt="Medios interactivos" onclick="openPopup('popup2')">
-                <img src="images/lecturasFC.jpg" alt="Lecturas" onclick="openPopup('popup3')">
-            </div>
+<header>
+    <h1>Flipped Classroom</h1>
+</header>
 
-            <!-- ✅ Popup para la primera variante -->
-            <div id="popup1" class="popup">
-                <div class="popup-content">
-                    <span class="close" onclick="closePopup('popup1')">&times;</span>
-                    <h3>Videos</h3> <!-- 🔧 Cambia el nombre de la variante -->
-                    <p>Enviar videos como material de estudio es una gran opción ya que incluso puede utilizarse desde edades muy tempranas. Sin embargo es necesario considerar la edad del estudiante para determinar la duración adecuada del video.</p> <!-- 🔧 Cambia esta descripción -->
-                </div>
-            </div>
+<main>
 
-            <!-- ✅ Popup para la segunda variante -->
-            <div id="popup2" class="popup">
-                <div class="popup-content">
-                    <span class="close" onclick="closePopup('popup2')">&times;</span>
-                    <h3>Medios Interactivos</h3> <!-- 🔧 Cambia el nombre de la variante -->
-                    <p>Tambien se pueden utilizar páginas web para disponer la información de forma interactiva. Por ejemplo en medios preparados en GeoGebra o Genially. Se puede observar un ejemplo de esto en el plan de lección de la parte de abajo.</p> <!-- 🔧 Cambia esta descripción -->
-                </div>
-            </div>
-            
-            <div id="popup3" class="popup">
-                <div class="popup-content">
-                    <span class="close" onclick="closePopup('popup3')">&times;</span>
-                    <h3>Lecturas</h3> <!-- 🔧 Cambia el nombre de la variante -->
-                    <p>Las lecturas en formato digital tambien son ideales con formatos de facil distribución como PDF. Sin embargo un punto importante a considerar es que en muchos contextos la lectura no es un formato llamativo para el estudiantado.</p> <!-- 🔧 Cambia esta descripción -->
-                </div>
-            </div>
-        </section>
+    <section id="essential-ideas" class="section-flex">
+        <div class="section-text">
+            <h2>Essential Ideas</h2>
+            <ul>
+                <li>Facilita la adquisición previa de conocimientos teóricos, optimizando el tiempo en clase para la aplicación práctica y la resolución de dudas.</li>
+                <li>En lugar de presentar contenido en clase y dejar los ejercicios para casa, el contenido se estudia en casa y se practican actividades en clase.</li>
+                <li>Los estudiantes acceden a videos, lecturas o presentaciones antes de la clase para prepararse. Estos pueden presentarse en formato digital.</li>
+                <li>Es una metodología perfecta para convinar con otras metodologías en clase, como por ejemplo centros de aprendizaje como se verá en el ejemplo.</li>
+            </ul>
+        </div>
+        <div class="section-img">
+            <img src="images/F_C_Image1.png" alt="Esquema de flipped classroom">
+            <figcaption>
+                Fuente: <a href="https://teaching.washington.edu/course-design/flipped-hybrid-and-online-teaching/flipping-the-classroom/" target="_blank">Education Corner</a>
+            </figcaption>
+        </div>
+    </section>
 
-        <!-- ✅ Sección de pros y contras -->
-        <section id="pros-and-cons" class="section-flex">
-            <div class="section-text">
-                <h2>Pros and Cons</h2>
-                <h3>Pros</h3>
-                <ul>
-                    <!-- 🔧 Lista de beneficios -->
-                    <li>Aumento en la participación y autonomía de los estudiantes.</li>
-                    <li>Motiva a los estudiantes a desarrollar habilidades de autorregulación y preparación previa.</li>
-                    <li>Transforma el rol del docente en facilitador del aprendizaje.</li>
-                    <li>Fomenta una mayor retención del conocimiento al involucrar a los estudiantes en experiencias prácticas.</li>
-                </ul>
-                <h3>Cons</h3>
-                <ul>
-                    <!-- 🔧 Lista de desventajas -->
-                    <li>Necesidad de una planificación rigurosa y recursos adecuados.</li>
-                    <li>algunos estudiantes pueden enfrentar dificultades para completar las tareas previas debido a la falta de acceso a tecnología o a hábitos de estudio autónomos.</li>
-                    <li>En la actualidad, no todos los estudiantes pueden mantener acceso a tecnologías claves para difundir los medios de esta metodología.</li>
-                </ul>
-            </div>
-            <div class="section-img">
-                <!-- 🔧 Imagen representando ventajas y desventajas -->
-                <img src="images/finalFC.jpg" alt="Pros and Cons of Methodology 1">
-            </div>
-        </section>
+    <!-- CAMBIO A guided-types -->
+    <section id="guided-types">
+        <h2>Medios digitales y sus ventajas</h2>
+        <div class="image-grid">
+            <img src="images/videoFC.jpg" alt="Videos" onclick="openPopup('popup1')">
+            <img src="images/interactivoFC.png" alt="Medios interactivos" onclick="openPopup('popup2')">
+            <img src="images/lecturasFC.jpg" alt="Lecturas" onclick="openPopup('popup3')">
+        </div>
 
-        <!-- ✅ Sección de planificación o ejemplo en PDF -->
-        <section id="example" class="section-flex" style="text-align: center;">
-            <div class="section-text">
-                <h2>Example Plan</h2>
-                <!-- 🔧 Cambia la ruta al archivo PDF y la imagen del ícono si lo deseas -->
-                <a href="pdf/FlippedClassroom.pdf" class="document-link" target="_blank">
-                    <img src="images/doc.png" alt="PDF Document">
-                    View Example PDF
-                </a>
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup1')">&times;</span>
+                <h3>Videos</h3>
+                <p>Enviar videos como material de estudio es una gran opción ya que incluso puede utilizarse desde edades muy tempranas. Sin embargo es necesario considerar la edad del estudiante para determinar la duración adecuada del video.</p>
             </div>
-        </section>
+        </div>
 
-    </main>
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup2')">&times;</span>
+                <h3>Medios Interactivos</h3>
+                <p>Tambien se pueden utilizar páginas web para disponer la información de forma interactiva. Por ejemplo en medios preparados en GeoGebra o Genially. Se puede observar un ejemplo de esto en el plan de lección de la parte de abajo.</p>
+            </div>
+        </div>
 
-    <!-- ✅ Pie de página -->
-    <footer>
-        <p>&copy; 2025 Education Methodologies</p> <!-- 🔧 Puedes cambiar el texto o el año si lo deseas -->
-    </footer>
+        <div id="popup3" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup3')">&times;</span>
+                <h3>Lecturas</h3>
+                <p>Las lecturas en formato digital tambien son ideales con formatos de facil distribución como PDF. Sin embargo un punto importante a considerar es que en muchos contextos la lectura no es un formato llamativo para el estudiantado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAMBIO A pros -->
+    <section id="pros" class="section-flex">
+        <div class="section-text">
+            <h2>Pros and Cons</h2>
+            <h3>Pros</h3>
+            <ul>
+                <li>Aumento en la participación y autonomía de los estudiantes.</li>
+                <li>Motiva a los estudiantes a desarrollar habilidades de autorregulación y preparación previa.</li>
+                <li>Transforma el rol del docente en facilitador del aprendizaje.</li>
+                <li>Fomenta una mayor retención del conocimiento al involucrar a los estudiantes en experiencias prácticas.</li>
+            </ul>
+            <h3>Cons</h3>
+            <ul>
+                <li>Necesidad de una planificación rigurosa y recursos adecuados.</li>
+                <li>algunos estudiantes pueden enfrentar dificultades para completar las tareas previas debido a la falta de acceso a tecnología o a hábitos de estudio autónomos.</li>
+                <li>En la actualidad, no todos los estudiantes pueden mantener acceso a tecnologías claves para difundir los medios de esta metodología.</li>
+            </ul>
+        </div>
+        <div class="section-img">
+            <img src="images/finalFC.jpg" alt="Pros and Cons of Methodology 1">
+        </div>
+    </section>
+
+    <!-- CAMBIO A example-link -->
+    <section id="example-link" class="section-flex" style="text-align: center;">
+        <div class="section-text">
+            <h2>Example Plan</h2>
+            <a href="pdf/FlippedClassroom.pdf" class="document-link" target="_blank">
+                <img src="images/doc.png" alt="PDF Document">
+                View Example PDF
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Education Methodologies</p>
+</footer>
 
 </body>
 </html>
