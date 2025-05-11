@@ -1,152 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metodología X - Nombre de la Nueva Metodología</title> <!-- ✅ Cambia el título aquí -->
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function openPopup(id) {
-            document.getElementById(id).style.display = "block";
-        }
-        function closePopup(id) {
-            document.getElementById(id).style.display = "none";
-        }
-    </script>
-</head>
-<body>
+<!-- 🔸 SECCIÓN: TIPOS O COMPONENTES -->
+<section id="characteristics">
+    <h2>Tipos o Componentes</h2>
+    <div class="image-grid">
+        <!-- ✅ Imágenes activadoras de las ventanas emergentes -->
+        <img src="images/tipo1.jpg" alt="Tipo 1" onclick="openPopup('popup1')">
+        <img src="images/tipo2.jpg" alt="Tipo 2" onclick="openPopup('popup2')">
+        <img src="images/tipo3.jpg" alt="Tipo 3" onclick="openPopup('popup3')"> <!-- Nuevo -->
+        <img src="images/tipo4.jpg" alt="Tipo 4" onclick="openPopup('popup4')"> <!-- Nuevo -->
+    </div>
 
-    <!-- 🔹 MENÚ DE NAVEGACIÓN -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Página Principal</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Metodologías</a>
-                <div class="dropdown-content">
-                    <!-- ✅ Agrega o modifica los enlaces aquí -->
-                    <a href="methodology1.html">Methodology 1</a>
-                    <a href="methodology2.html">Methodology 2</a>
-                    <a href="methodology3.html">Methodology 3</a>
-                    <a href="methodology4.html">Methodology 4</a>
-                    <a href="methodology5.html">Methodology 5</a>
-                </div>
-            </li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
-        </ul>
-    </nav>
+    <!-- ✅ POPUP TIPO 1 -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup1')">&times;</span>
+            <h3>Tipo 1</h3>
+            <p>Descripción del primer tipo o componente.</p>
+            <p>Puedes incluir varios párrafos aquí.</p>
+        </div>
+    </div>
 
-    <!-- 🔹 TÍTULO PRINCIPAL DE LA METODOLOGÍA -->
-    <header>
-        <h1>Nombre de la Nueva Metodología</h1> <!-- ✅ Modifica aquí el título principal -->
-    </header>
+    <!-- ✅ POPUP TIPO 2 -->
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup2')">&times;</span>
+            <h3>Tipo 2</h3>
+            <p>Descripción del segundo tipo o componente.</p>
+            <p>Agrega más detalle si es necesario.</p>
+        </div>
+    </div>
 
-    <main>
+    <!-- ✅ NUEVO: POPUP TIPO 3 -->
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup3')">&times;</span>
+            <h3>Tipo 3</h3>
+            <p>Descripción del tercer tipo o componente.</p>
+            <p>Información adicional sobre este tipo.</p>
+        </div>
+    </div>
 
-        <!-- 🔸 SECCIÓN: IDEAS ESENCIALES -->
-        <section id="essential-ideas" class="section-flex">
-            <div class="section-text">
-                <h2>Ideas Esenciales</h2>
-                <ul>
-                    <!-- ✅ Sustituye estos puntos por los conceptos clave de tu nueva metodología -->
-                    <li>Todos los centros llegan al mismo objetivo</li>
-                    <li>Segunda idea esencial.</li>
-                    <li>Tercera idea esencial.</li>
-                    <li>Cuarta idea esencial.</li>
-                    <li>Quinta idea esencial.</li>
-                </ul>
-            </div>
-            <div class="section-img">
-                <!-- ✅ Cambia la ruta y el texto alternativo de la imagen -->
-                <img src="images/nueva_metodologia.jpg" alt="Nombre de la Nueva Metodología">
-            </div>
-        </section>
+    <!-- ✅ NUEVO: POPUP TIPO 4 -->
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup4')">&times;</span>
+            <h3>Tipo 4</h3>
+            <p>Descripción del cuarto tipo o componente.</p>
+            <p>Incluye ejemplos o variaciones si lo deseas.</p>
+        </div>
+    </div>
+</section>
 
-        <!-- 🔸 SECCIÓN: TIPOS O COMPONENTES -->
-        <section id="characteristics">
-            <h2>Tipos o Componentes</h2>
-            <div class="image-grid">
-                <!-- ✅ Cambia las imágenes y funciones emergentes -->
-                <img src="images/tipo1.jpg" alt="Tipo 1" onclick="openPopup('popup1')">
-                <img src="images/tipo2.jpg" alt="Tipo 2" onclick="openPopup('popup2')">
-            </div>
-
-            <!-- ✅ POPUP TIPO 1 -->
-            <div id="popup1" class="popup">
-                <div class="popup-content">
-                    <span class="close" onclick="closePopup('popup1')">&times;</span>
-                    <h3>Tipo 1</h3>
-                    <p>Descripción del primer tipo o componente.</p>
-                    <p>Puedes incluir varios párrafos aquí.</p>
-                </div>
-            </div>
-
-            <!-- ✅ POPUP TIPO 2 -->
-            <div id="popup2" class="popup">
-                <div class="popup-content">
-                    <span class="close" onclick="closePopup('popup2')">&times;</span>
-                    <h3>Tipo 2</h3>
-                    <p>Descripción del segundo tipo o componente.</p>
-                    <p>Agrega más detalle si es necesario.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 🔸 SECCIÓN: BENEFICIOS -->
-        <section id="pros" class="section-flex">
-            <div class="section-text">
-                <h2>Beneficios</h2>
-                <ul>
-                    <!-- ✅ Lista de beneficios específicos de la nueva metodología -->
-                    <li>Beneficio 1.</li>
-                    <li>Beneficio 2.</li>
-                    <li>Beneficio 3.</li>
-                    <li>Beneficio 4.</li>
-                    <li>Beneficio 5.</li>
-                </ul>
-            </div>
-            <div class="section-img">
-                <!-- ✅ Imagen relacionada con los beneficios -->
-                <img src="images/beneficios_nueva.jpg" alt="Beneficios">
-            </div>
-        </section>
-
-        <!-- 🔸 SECCIÓN: RETOS -->
-        <section id="cons" class="section-flex">
-            <div class="section-text">
-                <h2>Retos</h2>
-                <ul>
-                    <!-- ✅ Lista los desafíos o limitaciones de aplicar esta metodología -->
-                    <li>Reto 1.</li>
-                    <li>Reto 2.</li>
-                    <li>Reto 3.</li>
-                    <li>Reto 4.</li>
-                    <li>Reto 5.</li>
-                </ul>
-            </div>
-            <div class="section-img">
-                <!-- ✅ Imagen relacionada con los retos -->
-                <img src="images/retos_nueva.jpg" alt="Retos">
-            </div>
-        </section>
-
-        <!-- 🔸 SECCIÓN: PLANIFICACIÓN DE EJEMPLO -->
-        <section id="example-link" class="section-flex" style="text-align: center;">
-            <div class="section-text">
-                <h2>Planificación de Ejemplo</h2>
-                <!-- ✅ Cambia el enlace al PDF y la imagen si lo deseas -->
-                <a href="pdf/nueva_metodologia.pdf" class="document-link" target="_blank">
-                    <img src="images/doc.png" alt="Documento">
-                    Ver planificación en PDF
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- 🔹 PIE DE PÁGINA -->
-    <footer>
-        <p>&copy; 2025 Metodologías de la Educación</p>
-    </footer>
-
-</body>
-</html>
